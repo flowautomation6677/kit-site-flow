@@ -22,7 +22,12 @@ O tratamento tipográfico deve garantir escaneabilidade e hierarquia de atençã
 - Fontes exatas e variáveis CSS serão fornecidas sempre e de forma exclusiva nos documentos (docs) do respectivo cliente.
 - É regra da casa focar na hierarquia bruta: Títulos (Headings) exigem uso de pesos potentes e dominantes (font-weight `700` a `800`), e todo o texto base ou textos longos na plataforma precisam recuar de peso (ficando contidos de `400` a `500`).
 
-## 4. Regra de Deploy (Infraestrutura)
+## 4. Gestão de Assets e Imagens (Infraestrutura Visual)
+Para garantir coesão mesmo durante a montagem primária em que as imagens finais ainda não existem:
+- Para imagens ausentes ou não fornecidas no documento, utilize espaços de placeholders estruturados (exemplo: via uma `div` com background cinza ou consumindo serviços como `placehold.co`). A criação de src's e caminhos de imagens fantasma (vazios e quebrados) é proibida.
+- Para todo pacote iconográfico (ícones UI generalistas na plataforma), **utilize exclusivamente a biblioteca `lucide-react`**.
+
+## 5. Regra de Deploy (Infraestrutura)
 Independente do cliente, todo projeto deve levantar o questionamento abaixo antes da materialização dos setups (arquivos `.config` ou compilações):
-- Ao iniciar ou formatar o repousitório, **o agente DEVE** obrigatoriamente perguntar ao usuário: *"Qual o destino do deploy? (1) HostGator/Estático ou (2) VPS/Dinâmico"*.
+- Ao iniciar ou formatar o repositório, **o agente DEVE** obrigatoriamente perguntar ao usuário: *"Qual o destino do deploy? (1) HostGator/Estático ou (2) VPS/Dinâmico"*.
 - **SE FOR 1:** Altere o arquivo de configuração raíz do Next.js (como `next.config.ts`) de modo a inserir e exportar estaticamente (`output: "export"`).
