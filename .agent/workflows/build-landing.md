@@ -10,7 +10,7 @@ Trata-se da linha de montagem universal que pavimenta o desenvolvimento de suces
 
 ## Passo 1 (Leitura de Contexto e O Contrato de Entrada)
 - Ao ouvir o gatilho, você como modelo de código **DEVE**, obrigatoriamente e antes de codificar telas inteiras, ler de forma atenta e literal os 2 arquivos abaixo indicados:
-  1. `@docs/wireframe-aprovado.md`: Para entender e capturar o Copy literário e a Estrutura da Página principal. O modelo obedece a um padrão rígido e estrutural. Você deve esperar processar as camadas desta forma:
+  1. `docs/wireframe.md`: Para entender e capturar o Copy literário e a Estrutura da Página principal. O modelo obedece a um padrão rígido e estrutural. Você deve esperar processar as camadas desta forma:
      - `## [Nome da Seção]` (ex: Hero, Features, CTA, Footer)
      - `- **Objetivo:**` (ex: Captura de lead, Prova social)
      - `- **Copy:**`
@@ -19,7 +19,7 @@ Trata-se da linha de montagem universal que pavimenta o desenvolvimento de suces
        - Texto do Botão (CTA): "..."
      - `- **Assets Visuais:**` (ex: O que carregar visualmente ali).
      - `- **Regra Específica:**` (ex: Comportamento ou diretrizes de fundo exigidas).
-  2. `@docs/idv-cliente.md`: Para recolher os mapeamentos das variáveis da cor HEX específicas e Tipografias nativas do cliente em pauta.
+  2. `docs/idv-cliente.md`: Para recolher os mapeamentos das variáveis da cor HEX específicas e Tipografias nativas do cliente em pauta.
 - Realize o interrogatório de infraestrutura perguntando onde rodará a aplicação (HostGator vs VPS).
 
 ## Passo 2 (Setup Dinâmico)
